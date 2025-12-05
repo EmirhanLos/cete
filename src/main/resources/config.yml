@@ -1,0 +1,64 @@
+# Prefix (tüm mesajların başına gelir)
+prefix: "&8[&6Çete&8] &7"
+
+# Depolama Ayarları
+# type: 'yaml' (dosya) veya 'mysql' (veritabanı)
+storage:
+  type: yaml
+  mysql:
+    host: localhost
+    port: 3306
+    database: minecraft
+    username: root
+    password: ""
+    ssl: false
+
+# Genel ayarlar
+settings:
+  max-members: 20                  # Bir çetede maksimum üye sayısı
+  default-friendly-fire: false     # Yeni çetelerde varsayılan friendly fire
+  allow-moderator-invite: true     # Moderatörler de davet atabilsin mi?
+
+# Mesajlar
+messages:
+  no-console: "&cBu komut sadece oyun içinden kullanılabilir."
+  no-permission: "&cBu komutu kullanmak için yetkin yok."
+  not-in-gang: "&cHerhangi bir çetede değilsin."
+  already-in-gang: "&cZaten bir çetedesin."
+  gang-not-found: "&cBöyle bir çete yok."
+  gang-id-used: "&cBu ID zaten kullanılıyor!"
+  gang-created: "&aÇete oluşturuldu: &e%name% &7(ID: %id%)"
+  gang-disbanded: "&cÇeteni dağıttın."
+  not-leader: "&cBu işlemi sadece çete lideri yapabilir."
+  not-leader-or-mod: "&cBu işlemi sadece lider veya moderatör yapabilir."
+  invite-sent: "&a%target% &7isimli oyuncuya davet gönderdin."
+  invite-received: "&a%leader% &7seni çetesine davet etti: &e%gang%"
+  invite-accept-info: "&7Kabul etmek için: &a/cete katıl %id%"
+  already-invited: "&cBu oyuncuya zaten bir davet göndermişsin."
+  target-not-online: "&cOyuncu çevrim içi değil."
+  target-already-in-gang: "&cBu oyuncu zaten bir çetede."
+  no-invite: "&cBu çete için geçerli bir davetin yok."
+  joined-gang: "&aArtık &e%gang% &açetesindesin."
+  leave-leader: "&cLidersin, ayrılmak yerine /cete dağıt kullan."
+  left-gang: "&cÇeteden ayrıldın."
+  ff-toggled: "&aÇete içi PvP durumu: &e%state%"
+  no-gangs: "&cSunucuda hiç çete yok."
+  list-header: "&6Mevcut Çeteler (&e%count%&6):"
+  info-not-in-gang: "&cÇetede değilsin, ID ver: /cete bilgi <id>"
+  reload-success: "&aPlugin ve config başarıyla yenilendi."
+
+  help-header: "&8&m------------------------------"
+  help-footer: "&8&m------------------------------"
+
+  # Yardım satırları
+  help-lines:
+    - "&6&lÇete Komutları"
+    - "&e/cete kur <id> <isim> &7- Yeni çete oluştur"
+    - "&e/cete dağıt &7- Çeteyi dağıt (lider)"
+    - "&e/cete davet <oyuncu> &7- Oyuncu davet et"
+    - "&e/cete katıl <id> &7- Daveti kabul et"
+    - "&e/cete ayrıl &7- Çeteden ayrıl"
+    - "&e/cete bilgi [id] &7- Çete bilgisi"
+    - "&e/cete liste &7- Tüm çeteleri listele"
+    - "&e/cete pvp &7- Çete içi PvP aç/kapat"
+    - "&e/cete reload &7- Plugini yeniler"
